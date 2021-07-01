@@ -1,0 +1,95 @@
+*{
+    /*Desaparecer los bordes por defecto*/
+    margin: 0;
+    padding: 0;
+}
+.Menu{
+    background-color:#636686;
+}
+.Menu nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Menu nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
+    display: block; /*Poner texto en bloque*/
+}
+a:hover{
+    background: #c8baca;
+}
+.Menu nav ul li ul{
+    display: flex;
+    flex-direction: column;
+}
+.Menu nav ul li ul{
+    position: absolute;
+    background: #84869e;
+}
+.Menu nav ul li ul li{
+    width: 150px;
+    position: relative;
+}
+.Menu nav ul li ul{
+    display: none;
+}
+.Menu nav ul li:hover > ul{
+    display: block;
+}
+.activate{
+    background-color: #c8baca;
+}
+section{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 0px 18px;
+}
+/*CAMBIOS EN EL FORMULARIO*/
+input[type="text"], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c8baca;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    background-color: #d182bd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: rgb(114, 88, 230);
+}
+form{
+    border-radius: 5px;
+    background-color: #c8baca;
+    padding: 20px;
+    width: 100%;
+}
+footer{
+    position: fixed;
+    height: 20px;
+    bottom: 0;
+    width: 100%;
+    background-color: #636686;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
